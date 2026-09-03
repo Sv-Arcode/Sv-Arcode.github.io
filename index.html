@@ -1,170 +1,223 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default"
-<html>
-	<head>
-		<title>Inoic Lab | Jinghui GUO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muyang Chen</title>
+<meta name="description" content="Muyang Chen — undergraduate researcher in Artificial Intelligence at The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen). Multimodal large language models, multimodal reasoning, and affective computing.">
+<style>
+  :root {
+    --text: #1f2430;
+    --muted: #5b6472;
+    --accent: #20558a;
+    --accent-light: #eaf1f8;
+    --rule: #e3e7ee;
+    --bg: #fdfdfc;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 72px; }
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+  /* ---------- header ---------- */
+  header.site { padding: 56px 0 8px; }
+  h1.name {
+    margin: 0 0 2px;
+    font-size: 2.1rem;
+    letter-spacing: 0.2px;
+  }
+  .cn-name { color: var(--muted); font-weight: 400; font-size: 1.15rem; margin-left: 8px; }
+  .tagline { color: var(--muted); font-size: 1.02rem; margin: 2px 0 12px; }
+  .nav-links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 18px;
+  }
+  .nav-links a:hover { text-decoration: underline; }
 
-						
+  /* ---------- sections ---------- */
+  section { margin-top: 40px; }
+  h2 {
+    font-size: 1.22rem;
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 6px;
+    margin: 0 0 14px;
+  }
+  p { margin: 0 0 12px; }
+  a { color: var(--accent); }
+  strong { font-weight: 650; }
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+  .card {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+  }
+  .card h3 { margin: 0; font-size: 1.02rem; }
+  .card .meta { color: var(--muted); font-size: 0.92rem; margin: 2px 0 8px; }
+  .card p { margin: 0; font-size: 0.95rem; color: #333a46; }
+  .badge {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 1px 10px;
+    margin-left: 6px;
+    vertical-align: 1px;
+    white-space: nowrap;
+  }
 
-						</div>
-					</header>
+  ul.news, ul.plain { margin: 0; padding-left: 20px; }
+  ul.plain li { margin-bottom: 7px; }
+  ul.news { list-style: none; padding-left: 0; }
+  ul.news li { margin-bottom: 7px; padding-left: 18px; position: relative; }
+  ul.news li::before { content: "›"; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .date { color: var(--muted); font-variant-numeric: tabular-nums; }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
+  .interests span {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: 6px;
+    padding: 2px 12px;
+    margin: 0 8px 8px 0;
+    font-size: 0.92rem;
+  }
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>Welcome to Guo's Lab at The Chinese University of Hong Kong, Shenzhen<br />
+  footer.site {
+    margin-top: 64px;
+    border-top: 1px solid var(--rule);
+    padding-top: 18px;
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
 
-							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>About</h2>
-										<div class="content">
-											<p>Our work</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Team</h2>
-										<div class="content">
-											<p>Smart brains</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Publications</h2>
-										<div class="content">
-											<p>blank</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>News</h2>
-										<div class="content">
-											<p>Introduce ourselves</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Our campus life</h2>
-										<div class="content">
-											<p>What will we do after work.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Gallery</h2>
-										<div class="content">
-											<p>Photos we take</p>
-										</div>
-									</a>
-								
-								
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
+  @media (max-width: 560px) {
+    h1.name { font-size: 1.7rem; }
+    header.site { padding-top: 40px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+<header class="site">
+  <h1 class="name">Muyang Chen<span class="cn-name">陈沐阳</span></h1>
+  <p class="tagline">Undergraduate researcher in Artificial Intelligence &middot; CUHK-Shenzhen</p>
+  <nav class="nav-links">
+    <a href="mailto:123090028@link.cuhk.edu.cn">Email</a>
+    <a href="https://github.com/Sv-Arcode">GitHub</a>
+    <a href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">Butterfly Project</a>
+  </nav>
+</header>
 
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+<section id="about">
+  <h2>About</h2>
+  <p>
+    I am a final-year B.Eng. student in Electrical and Computer Engineering (Computer Engineering
+    stream) at <strong>The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)</strong>, and an
+    undergraduate researcher in the Network and Artificial Intelligence System (NAIS) Lab,
+    advised by Prof. Fangxin Wang.
+  </p>
+  <p>
+    My work centers on making large models understand people more faithfully: I study how multimodal
+    large language models recognize hidden intent in long, strategic interactions, and how they
+    interpret affect in fine-grained visual domains. I also care about whether model decisions can be
+    explained and trusted.
+  </p>
+  <p class="interests">
+    <span>Multimodal LLMs</span>
+    <span>Intent &amp; Emotion Understanding</span>
+    <span>Multimodal Reasoning</span>
+    <span>Model Interpretability</span>
+  </p>
+</section>
 
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+<section id="news">
+  <h2>News</h2>
+  <ul class="news">
+    <li><span class="date">2026-08</span> — MISID manuscript submitted to <strong>AAAI 2027</strong> (under review).</li>
+    <li><span class="date">2026-06</span> — Our team ranked <strong>5th of 14 teams</strong> in Track 2 of the AffectiveArt Challenge at ACM Multimedia 2026 Grand Challenge.</li>
+    <li><span class="date">2025-06</span> — Butterfly species-classification project with from-scratch CAM analysis released on <a href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">GitHub</a>.</li>
+  </ul>
+</section>
 
-			</div>
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)</h3>
+    <p class="meta">B.Eng. in Electrical and Computer Engineering (Computer Engineering stream) &middot; Sep 2023 – Jun 2027 (expected)</p>
+    <p>
+      GPA 3.81/4.00 (Major GPA 3.90/4.00) &middot; Dean's List, School of Science and Engineering
+      (2023–24, 2024–25) &middot; Academic Specialty Entrance Scholarship (Second Class).
+    </p>
+  </div>
+</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<section id="research">
+  <h2>Research &amp; Projects</h2>
 
-	</body>
+  <div class="card">
+    <h3>MISID: Hidden-Intent Recognition in Strategic Deception Games <span class="badge">AAAI 2027 · Under Review</span></h3>
+    <p class="meta">NAIS Lab, CUHK-Shenzhen &middot; Co-first author &middot; Sep 2025 – Present</p>
+    <p>
+      Built the first multimodal, multi-turn benchmark for hidden-intent recognition in strategic
+      deception games — 3,962 temporally aligned audiovisual utterance segments with a two-tier
+      annotation scheme linking utterance-level affect to long-range factual evidence. Benchmarked
+      state-of-the-art LLMs/MLLMs and co-designed FRACTAM, a "Decouple–Anchor–Reason" baseline with
+      explicit cross-modal evidence chains.
+    </p>
+  </div>
 
+  <div class="card">
+    <h3>AffectiveArt Challenge 2026 (ACM Multimedia Grand Challenge, Track 2) <span class="badge">Rank 5 / 14</span></h3>
+    <p class="meta">Team lead &middot; May 2026 – Jun 2026</p>
+    <p>
+      Led a 3-member team in multidimensional art-emotion understanding. Designed an end-to-end
+      pipeline coupling FAB-G salience filtering over five formal art cues with a four-model
+      fine-tuned ensemble (Gemma-4-12B, Qwen3.5-9B, SigLIP2-giant, DINOv3) and a bidirectional
+      classification–description feedback loop, reaching 94.0% arousal accuracy and an overall
+      score of 0.8236 on the official leaderboard.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Interpretable Butterfly Species Classification <span class="badge">83.23% accuracy</span></h3>
+    <p class="meta">ECE4513 Image Processing and Computer Vision, CUHK-Shenzhen &middot; Project lead &middot; Summer 2025 &middot;
+      <a href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">code</a></p>
+    <p>
+      Trained a 4-layer CNN (32→256 filters) to classify 10 visually similar butterfly species, and
+      implemented Class Activation Mapping from scratch alongside PCA feature-space visualization to
+      trace each prediction to biologically meaningful wing regions. Authored an IEEE conference-format
+      technical report on the interpretability framework.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="plain">
+    <li><strong>Programming:</strong> Python, C++; LLM/VLM fine-tuning pipelines</li>
+    <li><strong>Tools &amp; Platforms:</strong> LaTeX, ComfyUI, AI-assisted development (Claude Code, Codex)</li>
+    <li><strong>Languages:</strong> Mandarin (native), English (fluent, full English-medium instruction)</li>
+  </ul>
+</section>
+
+<footer class="site">
+  © 2026 Muyang Chen &middot; Last updated September 2026 &middot; Built with plain HTML — no trackers.
+</footer>
+
+</div>
+</body>
 </html>
-
-
-

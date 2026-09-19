@@ -3,248 +3,180 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Muyang Chen</title>
-<meta name="description" content="Muyang Chen — undergraduate researcher in Artificial Intelligence at The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen). Multimodal large language models, multimodal reasoning, and affective computing.">
+<meta name="theme-color" content="#f8f8f5">
+<title>Muyang Chen | Multimodal AI Research</title>
+<meta name="description" content="Muyang Chen is an undergraduate researcher at CUHK-Shenzhen working on multimodal reasoning, intent recognition, and affective computing. Seeking PhD opportunities for Fall 2027.">
+<link rel="canonical" href="https://sv-arcode.github.io/">
 <style>
-  :root {
-    --text: #1f2430;
-    --muted: #5b6472;
-    --accent: #20558a;
-    --accent-light: #eaf1f8;
-    --rule: #e3e7ee;
-    --bg: #fdfdfc;
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
-    font-size: 16px;
-    line-height: 1.65;
-  }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 72px; }
-
-  /* ---------- header ---------- */
-  header.site { padding: 56px 0 8px; }
-  h1.name {
-    margin: 0 0 2px;
-    font-size: 2.1rem;
-    letter-spacing: 0.2px;
-  }
-  .cn-name { color: var(--muted); font-weight: 400; font-size: 1.15rem; margin-left: 8px; }
-  .tagline { color: var(--muted); font-size: 1.02rem; margin: 2px 0 12px; }
-  .nav-links a {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 600;
-    margin-right: 18px;
-  }
-  .nav-links a:hover { text-decoration: underline; }
-
-  /* ---------- sections ---------- */
-  section { margin-top: 40px; }
-  h2 {
-    font-size: 1.22rem;
-    border-bottom: 2px solid var(--rule);
-    padding-bottom: 6px;
-    margin: 0 0 14px;
-  }
-  p { margin: 0 0 12px; }
-  a { color: var(--accent); }
-  strong { font-weight: 650; }
-
-  .card {
-    background: #fff;
-    border: 1px solid var(--rule);
-    border-radius: 8px;
-    padding: 16px 20px;
-    margin-bottom: 14px;
-  }
-  .card h3 { margin: 0; font-size: 1.02rem; }
-  .card .meta { color: var(--muted); font-size: 0.92rem; margin: 2px 0 8px; }
-  .card p { margin: 0; font-size: 0.95rem; color: #333a46; }
-  .card p + p { margin-top: 10px; }
-  .badge {
-    display: inline-block;
-    background: var(--accent-light);
-    color: var(--accent);
-    font-size: 0.78rem;
-    font-weight: 600;
-    border-radius: 10px;
-    padding: 1px 10px;
-    margin-left: 6px;
-    vertical-align: 1px;
-    white-space: nowrap;
-  }
-
-  ul.news, ul.plain { margin: 0; padding-left: 20px; }
-  ul.plain li { margin-bottom: 7px; }
-  ul.news { list-style: none; padding-left: 0; }
-  ul.news li { margin-bottom: 7px; padding-left: 18px; position: relative; }
-  ul.news li::before { content: "›"; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
-  .date { color: var(--muted); font-variant-numeric: tabular-nums; }
-
-  .interests span {
-    display: inline-block;
-    background: var(--accent-light);
-    color: var(--accent);
-    border-radius: 6px;
-    padding: 2px 12px;
-    margin: 0 8px 8px 0;
-    font-size: 0.92rem;
-  }
-
-  footer.site {
-    margin-top: 64px;
-    border-top: 1px solid var(--rule);
-    padding-top: 18px;
-    color: var(--muted);
-    font-size: 0.88rem;
-  }
-
-  @media (max-width: 560px) {
-    h1.name { font-size: 1.7rem; }
-    header.site { padding-top: 40px; }
-  }
+:root{--ink:#232c32;--muted:#59656c;--accent:#245e57;--line:#dce2de;--paper:#f8f8f5;--soft:#edf2ee}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:28px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 "Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent);text-underline-offset:4px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px;border-radius:2px}
+.skip{position:absolute;left:20px;top:-100px;padding:10px 16px;background:#fff;z-index:10}
+.skip:focus{top:12px}
+.layout{max-width:1160px;margin:auto;padding:64px 40px 40px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:76px}
+.identity{position:sticky;top:44px;align-self:start}
+.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 16px}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:43px;line-height:1.1;letter-spacing:-1.5px;margin:0 0 10px}
+.cn{font-size:18px;letter-spacing:.12em;color:var(--muted);margin:0 0 18px}
+.affiliation{font-size:14px;line-height:1.65;color:var(--muted);margin:0 0 24px}
+.contacts{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.contacts a{display:inline-flex;align-items:center;min-height:44px;padding:7px 12px;border:1px solid var(--line);border-radius:4px;text-decoration:none;font-size:13px;font-weight:600;background:#fff}
+.contacts a.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.contacts a:hover{border-color:var(--accent)}
+.email{font-size:13px;overflow-wrap:anywhere}
+.section-nav{border-top:1px solid var(--line);padding-top:22px;margin-top:28px;display:flex;flex-direction:column;gap:3px}
+.section-nav a{font-size:14px;padding:7px 0;text-decoration:none;color:var(--muted)}
+.section-nav a:hover{color:var(--accent)}
+main{min-width:0}
+section{margin-bottom:48px;scroll-margin-top:24px}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:27px;line-height:1.3;font-weight:400;letter-spacing:-.4px;margin:0 0 22px}
+h3{font-size:18px;line-height:1.45;letter-spacing:-.2px;margin:0 0 5px;font-weight:650}
+p{margin:0 0 15px}
+.intro{font-size:18px;line-height:1.75}
+.intro strong{font-weight:600}
+.opportunity{border-left:3px solid var(--accent);padding:10px 16px;background:var(--soft);font-size:14px;margin:24px 0 0}
+.interests{font-size:13px;color:var(--muted);margin-top:20px}
+.interests span{display:inline-block;margin-right:14px}
+.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);margin-bottom:24px;padding-bottom:12px}
+.section-title h2{margin:0}
+.section-title a{font-size:13px;white-space:nowrap}
+.project{padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid var(--line)}
+.project:last-child{margin-bottom:0;padding-bottom:0;border:0}
+.meta{font-size:13px;color:var(--muted);margin:0 0 14px}
+.status{font-size:12px;font-weight:600;color:var(--accent);margin:0 0 8px;letter-spacing:.02em}
+.project p,.project li{font-size:15px}
+.project .meta{font-size:13px}
+.project .status{font-size:12px}
+ul{padding-left:20px;margin:12px 0 0}
+li{padding-left:3px;margin-bottom:7px}
+.result{color:var(--accent);font-size:14px!important;margin-top:14px}
+details{margin-top:16px;font-size:14px}
+summary{color:var(--accent);cursor:pointer;padding:7px 0;width:fit-content;font-size:13px}
+details p{color:var(--muted);font-size:14px!important;margin-top:10px}
+.education-head{margin-bottom:18px}
+.grades{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 24px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grades dt{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:6px}
+.grades dd{margin:0;font-size:22px;font-family:Georgia,"Times New Roman",serif}
+.grades dd span{font-size:13px;font-family:"Segoe UI",sans-serif;color:var(--muted)}
+.small{font-size:14px}
+.honors{font-size:14px;margin-top:14px}
+.skills{display:grid;grid-template-columns:110px minmax(0,1fr);gap:8px 18px;font-size:14px;margin:0}
+.skills dt{color:var(--muted)}
+.skills dd{margin:0}
+footer{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+@media(max-width:850px){.layout{grid-template-columns:200px minmax(0,1fr);gap:36px;padding:40px 28px}.identity h1{font-size:36px}.contacts{gap:7px}.contacts a{padding:7px 10px}}
+@media(max-width:650px){.layout{display:block;padding:32px 22px}.identity{position:static;margin-bottom:32px}.identity h1{font-size:42px}.cn{display:inline;font-size:17px}.affiliation{margin:14px 0 18px}.contacts{margin-bottom:10px}.section-nav{flex-direction:row;flex-wrap:wrap;gap:0 22px;margin-top:20px;padding-top:10px}.section-nav a{min-height:44px}.eyebrow{margin-bottom:12px}.intro{font-size:17px}section{margin-bottom:38px}.grades{gap:10px}.grades dd{font-size:21px}.section-title{gap:10px}.section-title h2{font-size:25px}.skills{grid-template-columns:90px minmax(0,1fr);gap:8px 12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body{background:#fff;font-size:11pt}.layout{display:block;padding:0;max-width:none}.identity{position:static;margin-bottom:24px}.section-nav,.skip,details{display:none}.contacts{margin:12px 0}.project{break-inside:avoid}section{margin-bottom:24px}a{color:inherit}.grades{padding:10px 0}footer{margin-top:20px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-
-<header class="site">
-  <h1 class="name">Muyang Chen<span class="cn-name">陈沐阳</span></h1>
-  <p class="tagline">Undergraduate researcher in Artificial Intelligence &middot; CUHK-Shenzhen</p>
-  <nav class="nav-links">
-    <a href="mailto:123090028@link.cuhk.edu.cn">Email</a>
-    <a href="https://github.com/Sv-Arcode">GitHub</a>
-    <a href="CV_MuyangChen.pdf">CV (PDF)</a>
-    <a href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">Butterfly Project</a>
-  </nav>
+<a class="skip" href="#main">Skip to content</a>
+<div class="layout">
+<header class="identity">
+<p class="eyebrow">AI · Multimodal reasoning</p>
+<h1>Muyang Chen</h1>
+<p class="cn" lang="zh-CN">陈沐阳</p>
+<p class="affiliation">Undergraduate researcher<br>The Chinese University of Hong Kong, Shenzhen</p>
+<div class="contacts" aria-label="Contact and résumé">
+<a class="primary" href="CV_MuyangChen.pdf">CV (PDF)</a>
+<a href="mailto:muyangchen@link.cuhk.edu.cn">Email</a>
+<a href="https://github.com/Sv-Arcode">GitHub</a>
+</div>
+<a class="email" href="mailto:muyangchen@link.cuhk.edu.cn">muyangchen@link.cuhk.edu.cn</a>
+<nav class="section-nav" aria-label="Page sections">
+<a href="#about">About</a>
+<a href="#research">Research &amp; projects</a>
+<a href="#education">Education</a>
+<a href="#teaching">Teaching</a>
+<a href="#skills">Skills</a>
+</nav>
 </header>
-
-<section id="about">
-  <h2>About</h2>
-  <p>
-    I am a final-year B.Eng. student in Electrical and Computer Engineering (Computer Engineering
-    stream) at <strong>The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)</strong>, and an
-    undergraduate researcher in the Network and Artificial Intelligence System (NAIS) Lab,
-    with Prof. Fangxin Wang as lab PI and Dr. Dayou Zhang as my research mentor.
-    I expect to graduate in June 2027 and am seeking PhD opportunities starting in Fall 2027.
-  </p>
-  <p>
-    My work centers on making large models understand people more faithfully: I study how multimodal
-    large language models recognize hidden intent in long, strategic interactions, and how they
-    interpret affect in fine-grained visual domains. I also care about whether model decisions can be
-    explained and trusted.
-  </p>
-  <p class="interests">
-    <span>Multimodal LLMs</span>
-    <span>Intent &amp; Emotion Understanding</span>
-    <span>Multimodal Reasoning</span>
-    <span>Model Interpretability</span>
-  </p>
+<main id="main">
+<section id="about" aria-labelledby="about-title">
+<h2 id="about-title">About</h2>
+<p class="intro">I study how multimodal models use evidence to understand intent and emotion. My interests are in <strong>multimodal reasoning, intent recognition, and affective computing</strong>.</p>
+<p>I am a final-year Electrical and Computer Engineering student at CUHK-Shenzhen and an undergraduate researcher in the NAIS Lab. My lab PI is Prof. Fangxin Wang, and my research mentor is Dr. Dayou Zhang.</p>
+<p>Through my work on MISID and AffectiveArt, I have worked on annotation, model evaluation, and multimodal systems. I am interested in understanding where models fail and how to evaluate their reasoning more carefully.</p>
+<p class="opportunity">I expect to graduate in June 2027 and am seeking <strong>PhD opportunities for Fall 2027</strong>.</p>
 </section>
-
-<section id="news">
-  <h2>News</h2>
-  <ul class="news">
-    <li><span class="date">2026-09</span> — Named to the School of Science and Engineering Dean's List for 2025–26.</li>
-    <li>Our MISID manuscript is under review at <strong>AAAI 2027</strong>.</li>
-    <li>Our team ranked <strong>5th of 14 teams</strong> in Track 2 of the AffectiveArt Challenge at ACM Multimedia 2026 Grand Challenge.</li>
-  </ul>
+<section id="research" aria-labelledby="research-title">
+<div class="section-title"><h2 id="research-title">Research &amp; projects</h2><a href="CV_MuyangChen.pdf">Full CV ↗</a></div>
+<article class="project">
+<p class="status">Co-first author · Under review at AAAI 2027</p>
+<h3>MISID: Multimodal Intent Recognition</h3>
+<p class="meta">NAIS Lab, CUHK-Shenzhen · Sep 2025 – Present</p>
+<p>A dataset and framework for studying hidden intent in long, multimodal conversations in strategic deception games.</p>
+<ul>
+<li>Co-developed the annotation scheme for 3,962 aligned audiovisual utterance segments and independently evaluated inter-annotator agreement.</li>
+<li>Designed FRACTAM's modal decoupling and text reconstruction component for annotation and inference.</li>
+<li>Contributed to model evaluation, conducted ablation studies, and co-designed the LLM-as-a-Judge protocol and FRACTAM framework.</li>
+</ul>
+<p class="result">The full framework improved mean Hidden Intent Inference Score from 34.22 to 42.79 across ten language-model backbones.</p>
+<details><summary>Method and evaluation details</summary>
+<p>The modal decoupling component pairs audio with eGeMAPS features and sampled video frames with FACS descriptors. It generates modality-specific descriptions without additional speech transcripts to limit textual interference and support subsequent cross-modal inconsistency analysis.</p>
+<p>Inter-annotator agreement reached Krippendorff's α of 0.80–0.94 across structured fields. I contributed to the zero-shot evaluation of 19 language and video-language models. FRACTAM combines modality decoupling, long-range retrieval, and cross-modal evidence chains.</p>
+</details>
+</article>
+<article class="project">
+<p class="status">Team lead · 5th of 14 teams</p>
+<h3>AffectiveArt: Artwork Emotion Understanding</h3>
+<p class="meta">ACM Multimedia 2026 Grand Challenge, Track 2 · May – Jun 2026</p>
+<p>A system for recognizing emotion in artworks and generating emotion descriptions.</p>
+<ul>
+<li>Led a three-member team and designed the overall system architecture.</li>
+<li>Fine-tuned image classifiers and designed validation-weighted voting, which outperformed the best individual model.</li>
+<li>Used salience and classification outputs to condition a LoRA-fine-tuned Qwen3.5-27B description model.</li>
+</ul>
+<details><summary>Models and results</summary>
+<p>The classifiers used Gemma, Qwen, SigLIP2, and DINOv3. The system achieved 94.0% arousal, 88.3% valence, and 79.2% emotion accuracy on the hidden test set. Generated descriptions are outputs, not inputs to the classifiers.</p>
+</details>
+</article>
+<article class="project">
+<p class="status">Course project · Project lead</p>
+<h3>Interpretable Butterfly Classification</h3>
+<p class="meta">ECE4513 Image Processing and Computer Vision · Summer 2025</p>
+<p>Led a four-layer CNN project to classify ten visually similar butterfly species, achieving 83.23% test accuracy. Implemented Class Activation Mapping from scratch and used PCA of feature maps to examine the image regions supporting predictions.</p>
+<a class="small" href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">View code on GitHub ↗</a>
+</article>
 </section>
-
-<section id="education">
-  <h2>Education</h2>
-  <div class="card">
-    <h3>The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)</h3>
-    <p class="meta">B.Eng. in Electrical and Computer Engineering (Computer Engineering stream) &middot; Sep 2023 – Jun 2027 (expected)</p>
-    <p>
-      Cumulative GPA 3.81/4.00 &middot; Major GPA 3.90/4.00 (3/60, top 5% in the Computer Engineering stream)
-      &middot; Dean's List, School of Science and Engineering (2023–24, 2024–25, 2025–26)
-      &middot; Academic Specialty Entrance Scholarship, Second Class (2023, renewable).
-    </p>
-    <p><strong>Selected coursework (all A):</strong> Machine Learning; Machine Intelligence and Applications;
-      Image Processing and Computer Vision; Parallel Programming.</p>
-  </div>
+<section id="education" aria-labelledby="education-title">
+<div class="section-title"><h2 id="education-title">Education</h2></div>
+<div class="education-head"><h3>The Chinese University of Hong Kong, Shenzhen</h3>
+<p class="small">B.Eng. in Electrical and Computer Engineering<br>Computer Engineering stream</p>
+<p class="meta">Sep 2023 – Jun 2027 (expected)</p></div>
+<dl class="grades">
+<div><dt>Cumulative GPA</dt><dd>3.81 <span>/ 4.00</span></dd></div>
+<div><dt>Major GPA</dt><dd>3.90 <span>/ 4.00</span></dd></div>
+<div><dt>Major GPA rank · CE stream</dt><dd>3 / 60 <span>· Top 5%</span></dd></div>
+</dl>
+<p class="small"><strong>Selected coursework (all A):</strong> Machine Learning; Machine Intelligence and Applications; Image Processing and Computer Vision; Parallel Programming.</p>
+<ul class="honors">
+<li>Dean's List, School of Science and Engineering: 2023–24, 2024–25, 2025–26.</li>
+<li>Academic Specialty Entrance Scholarship, Second Class: 2023 (renewable).</li>
+</ul>
 </section>
-
-<section id="research">
-  <h2>Research &amp; Projects</h2>
-
-  <div class="card">
-    <h3>MISID: Hidden-Intent Recognition in Strategic Deception Games <span class="badge">AAAI 2027 · Under Review</span></h3>
-    <p class="meta">NAIS Lab, CUHK-Shenzhen &middot; Co-first author &middot; Sep 2025 – Present</p>
-    <p>
-      Co-developed a two-tier annotation scheme linking affective states with long-range factual evidence
-      for 3,962 aligned audiovisual utterance segments; independently assessed inter-annotator agreement
-      (Krippendorff's α: 0.80–0.94 across structured fields).
-    </p>
-    <p>
-      Designed FRACTAM's modal decoupling and text reconstruction for annotation and inference, pairing
-      audio with eGeMAPS features and sampled video frames with FACS descriptors. Generated modality-specific
-      descriptions without additional speech transcripts to limit textual interference and support
-      subsequent cross-modal inconsistency analysis.
-    </p>
-    <p>
-      Contributed to the zero-shot evaluation of 19 language and video-language models, conducted ablation
-      studies, and co-designed the LLM-as-a-Judge protocol. Co-designed FRACTAM, integrating modality
-      decoupling, long-range retrieval, and cross-modal evidence chains; the full framework improved mean
-      Hidden Intent Inference Score from 34.22 to 42.79 across ten language-model backbones.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>AffectiveArt Challenge 2026 (ACM Multimedia Grand Challenge, Track 2) <span class="badge">Rank 5 / 14</span></h3>
-    <p class="meta">Team lead &middot; May 2026 – Jun 2026</p>
-    <p>
-      Led a 3-member team and designed the overall system architecture. Fine-tuned Gemma, Qwen,
-      SigLIP2, and DINOv3 classifiers, and designed and implemented validation-weighted voting that
-      outperformed the best individual model. Salience and classification outputs conditioned a
-      LoRA-fine-tuned Qwen3.5-27B model for artwork emotion descriptions. The team placed 5th among
-      14 teams. The system achieved 94.0% arousal, 88.3% valence, and 79.2% emotion accuracy on the hidden
-      test set.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>Interpretable Butterfly Species Classification <span class="badge">83.23% accuracy</span></h3>
-    <p class="meta">ECE4513 Image Processing and Computer Vision, CUHK-Shenzhen &middot; Project lead &middot; Summer 2025 &middot;
-      <a href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">code</a></p>
-    <p>
-      Led a four-layer CNN project classifying ten visually similar butterfly species; achieved 83.23%
-      test accuracy. Implemented Class Activation Mapping (CAM) from scratch and combined it with PCA
-      of final-layer feature maps to examine which image regions supported predictions; documented
-      the analysis in a technical report.
-    </p>
-  </div>
+<section id="teaching" aria-labelledby="teaching-title">
+<div class="section-title"><h2 id="teaching-title">Teaching</h2></div>
+<h3>Undergraduate Student Teaching Fellow</h3>
+<p class="meta">MAT1001 Calculus I, CUHK-Shenzhen · Sep – Dec 2024</p>
+<p class="small">Supported weekly tutorials and office hours for approximately 60 students.</p>
 </section>
-
-<section id="teaching">
-  <h2>Teaching Experience</h2>
-  <div class="card">
-    <h3>Undergraduate Student Teaching Fellow</h3>
-    <p class="meta">MAT1001 Calculus I, CUHK-Shenzhen &middot; Sep – Dec 2024</p>
-    <p>Supported weekly tutorials and office hours for approximately 60 students.</p>
-  </div>
+<section id="skills" aria-labelledby="skills-title">
+<div class="section-title"><h2 id="skills-title">Skills &amp; languages</h2></div>
+<dl class="skills">
+<dt>Programming</dt><dd>Python, C++</dd>
+<dt>ML &amp; vision</dt><dd>PyTorch, OpenCV</dd>
+<dt>Tools</dt><dd>Git, Linux, LaTeX</dd>
+<dt>Languages</dt><dd>Mandarin (native); English (IELTS Academic 7.0)</dd>
+</dl>
 </section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <ul class="plain">
-    <li><strong>Programming:</strong> Python, C++</li>
-    <li><strong>Machine Learning:</strong> PyTorch, OpenCV</li>
-    <li><strong>Tools:</strong> Git, Linux, LaTeX</li>
-    <li><strong>Languages:</strong> Mandarin (native), English (IELTS Academic 7.0 overall)</li>
-  </ul>
-</section>
-
-<footer class="site">
-  © 2026 Muyang Chen &middot; Last updated 19 September 2026 &middot; Built with plain HTML — no trackers.
-</footer>
-
+<footer><span>© 2026 Muyang Chen</span><span>Updated 19 September 2026 · <a href="#about">Back to top ↑</a></span></footer>
+</main>
 </div>
 </body>
 </html>

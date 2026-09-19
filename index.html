@@ -65,6 +65,7 @@
   .card h3 { margin: 0; font-size: 1.02rem; }
   .card .meta { color: var(--muted); font-size: 0.92rem; margin: 2px 0 8px; }
   .card p { margin: 0; font-size: 0.95rem; color: #333a46; }
+  .card p + p { margin-top: 10px; }
   .badge {
     display: inline-block;
     background: var(--accent-light);
@@ -118,6 +119,7 @@
   <nav class="nav-links">
     <a href="mailto:123090028@link.cuhk.edu.cn">Email</a>
     <a href="https://github.com/Sv-Arcode">GitHub</a>
+    <a href="CV_MuyangChen.pdf">CV (PDF)</a>
     <a href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">Butterfly Project</a>
   </nav>
 </header>
@@ -128,7 +130,8 @@
     I am a final-year B.Eng. student in Electrical and Computer Engineering (Computer Engineering
     stream) at <strong>The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)</strong>, and an
     undergraduate researcher in the Network and Artificial Intelligence System (NAIS) Lab,
-    advised by Prof. Fangxin Wang.
+    with Prof. Fangxin Wang as lab PI and Dr. Dayou Zhang as my research mentor.
+    I expect to graduate in June 2027 and am seeking PhD opportunities starting in Fall 2027.
   </p>
   <p>
     My work centers on making large models understand people more faithfully: I study how multimodal
@@ -147,9 +150,9 @@
 <section id="news">
   <h2>News</h2>
   <ul class="news">
-    <li><span class="date">2026-08</span> — MISID manuscript submitted to <strong>AAAI 2027</strong> (under review).</li>
-    <li><span class="date">2026-06</span> — Our team ranked <strong>5th of 14 teams</strong> in Track 2 of the AffectiveArt Challenge at ACM Multimedia 2026 Grand Challenge.</li>
-    <li><span class="date">2025-06</span> — Butterfly species-classification project with from-scratch CAM analysis released on <a href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">GitHub</a>.</li>
+    <li><span class="date">2026-09</span> — Named to the School of Science and Engineering Dean's List for 2025–26.</li>
+    <li>Our MISID manuscript is under review at <strong>AAAI 2027</strong>.</li>
+    <li>Our team ranked <strong>5th of 14 teams</strong> in Track 2 of the AffectiveArt Challenge at ACM Multimedia 2026 Grand Challenge.</li>
   </ul>
 </section>
 
@@ -159,10 +162,12 @@
     <h3>The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)</h3>
     <p class="meta">B.Eng. in Electrical and Computer Engineering (Computer Engineering stream) &middot; Sep 2023 – Jun 2027 (expected)</p>
     <p>
-      GPA 3.81/4.00 &middot; Major GPA 3.90/4.00 (3/60, top 5% in the Computer Engineering stream)
+      Cumulative GPA 3.81/4.00 &middot; Major GPA 3.90/4.00 (3/60, top 5% in the Computer Engineering stream)
       &middot; Dean's List, School of Science and Engineering (2023–24, 2024–25, 2025–26)
       &middot; Academic Specialty Entrance Scholarship, Second Class (2023, renewable).
     </p>
+    <p><strong>Selected coursework (all A):</strong> Machine Learning; Machine Intelligence and Applications;
+      Image Processing and Computer Vision; Parallel Programming.</p>
   </div>
 </section>
 
@@ -173,10 +178,21 @@
     <h3>MISID: Hidden-Intent Recognition in Strategic Deception Games <span class="badge">AAAI 2027 · Under Review</span></h3>
     <p class="meta">NAIS Lab, CUHK-Shenzhen &middot; Co-first author &middot; Sep 2025 – Present</p>
     <p>
-      Co-developed a multimodal, multi-turn benchmark with 3,962 temporally aligned audiovisual
-      utterance segments and a two-tier annotation scheme. Designed FRACTAM's modal decoupling and
-      text reconstruction component, independently handled the inter-annotator agreement study,
-      and contributed to model evaluation, ablation studies, and the LLM-as-a-Judge protocol.
+      Co-developed a two-tier annotation scheme linking affective states with long-range factual evidence
+      for 3,962 aligned audiovisual utterance segments; independently assessed inter-annotator agreement
+      (Krippendorff's α: 0.80–0.94 across structured fields).
+    </p>
+    <p>
+      Designed FRACTAM's modal decoupling and text reconstruction for annotation and inference, pairing
+      audio with eGeMAPS features and sampled video frames with FACS descriptors. Generated modality-specific
+      descriptions without additional speech transcripts to limit textual interference and support
+      subsequent cross-modal inconsistency analysis.
+    </p>
+    <p>
+      Contributed to the zero-shot evaluation of 19 language and video-language models, conducted ablation
+      studies, and co-designed the LLM-as-a-Judge protocol. Co-designed FRACTAM, integrating modality
+      decoupling, long-range retrieval, and cross-modal evidence chains; the full framework improved mean
+      Hidden Intent Inference Score from 34.22 to 42.79 across ten language-model backbones.
     </p>
   </div>
 
@@ -188,7 +204,8 @@
       SigLIP2, and DINOv3 classifiers, and designed and implemented validation-weighted voting that
       outperformed the best individual model. Salience and classification outputs conditioned a
       LoRA-fine-tuned Qwen3.5-27B model for artwork emotion descriptions. The team placed 5th among
-      14 teams, with an overall score of 0.8236 on the official leaderboard.
+      14 teams. The system achieved 94.0% arousal, 88.3% valence, and 79.2% emotion accuracy on the hidden
+      test set.
     </p>
   </div>
 
@@ -197,11 +214,20 @@
     <p class="meta">ECE4513 Image Processing and Computer Vision, CUHK-Shenzhen &middot; Project lead &middot; Summer 2025 &middot;
       <a href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">code</a></p>
     <p>
-      Trained a 4-layer CNN (32→256 filters) to classify 10 visually similar butterfly species, and
-      implemented Class Activation Mapping from scratch alongside PCA feature-space visualization to
-      trace each prediction to biologically meaningful wing regions. Authored an IEEE conference-format
-      technical report on the interpretability framework.
+      Led a four-layer CNN project classifying ten visually similar butterfly species; achieved 83.23%
+      test accuracy. Implemented Class Activation Mapping (CAM) from scratch and combined it with PCA
+      of final-layer feature maps to examine which image regions supported predictions; documented
+      the analysis in a technical report.
     </p>
+  </div>
+</section>
+
+<section id="teaching">
+  <h2>Teaching Experience</h2>
+  <div class="card">
+    <h3>Undergraduate Student Teaching Fellow</h3>
+    <p class="meta">MAT1001 Calculus I, CUHK-Shenzhen &middot; Sep – Dec 2024</p>
+    <p>Supported weekly tutorials and office hours for approximately 60 students.</p>
   </div>
 </section>
 
@@ -216,7 +242,7 @@
 </section>
 
 <footer class="site">
-  © 2026 Muyang Chen &middot; Last updated September 2026 &middot; Built with plain HTML — no trackers.
+  © 2026 Muyang Chen &middot; Last updated 19 September 2026 &middot; Built with plain HTML — no trackers.
 </footer>
 
 </div>

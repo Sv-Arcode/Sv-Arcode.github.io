@@ -130,7 +130,7 @@ footer{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-co
 <ul>
 <li>Led a three-member team and designed the overall system architecture.</li>
 <li>Fine-tuned image classifiers and designed validation-weighted voting, which outperformed the best individual model.</li>
-<li>Used salience and classification outputs to condition a LoRA-fine-tuned Qwen3.5-27B description model.</li>
+<li>Independently fine-tuned SigLIP2 and DINOv3 for visual-attribute salience prediction; salience and classification outputs conditioned a LoRA-fine-tuned Qwen3.5-27B description model.</li>
 </ul>
 <details><summary>Models and results</summary>
 <p>The classifiers used Gemma, Qwen, SigLIP2, and DINOv3. The system achieved 94.0% arousal, 88.3% valence, and 79.2% emotion accuracy on the hidden test set. Generated descriptions are outputs, not inputs to the classifiers.</p>

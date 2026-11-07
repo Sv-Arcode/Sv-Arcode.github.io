@@ -3,181 +3,119 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f8f8f5">
+<meta name="theme-color" content="#fafaf8">
 <title>Muyang Chen | Multimodal AI Research</title>
-<meta name="description" content="Muyang Chen is an undergraduate researcher at CUHK-Shenzhen working on multimodal reasoning, intent recognition, and affective computing.">
+<meta name="description" content="Muyang Chen, undergraduate researcher at CUHK-Shenzhen. Multimodal reasoning, affective computing, and visual token compression.">
 <link rel="canonical" href="https://sv-arcode.github.io/">
 <style>
-:root{--ink:#232c32;--muted:#59656c;--accent:#245e57;--line:#dce2de;--paper:#f8f8f5;--soft:#edf2ee}
+:root{--ink:#222c31;--muted:#5b666b;--accent:#246258;--line:#dce2df;--paper:#fafaf8}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:28px;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 "Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
-a{color:var(--accent);text-underline-offset:4px;text-decoration-thickness:1px}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 "Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+.page{max-width:900px;margin:auto;padding:44px 36px 28px}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{text-decoration-thickness:2px}
-a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px;border-radius:2px}
-.skip{position:absolute;left:20px;top:-100px;padding:10px 16px;background:#fff;z-index:10}
-.skip:focus{top:12px}
-.layout{max-width:1160px;margin:auto;padding:64px 40px 40px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:76px}
-.identity{position:sticky;top:44px;align-self:start}
-.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 16px}
-h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:43px;line-height:1.1;letter-spacing:-1.5px;margin:0 0 10px}
-.cn{font-size:18px;letter-spacing:.12em;color:var(--muted);margin:0 0 18px}
-.affiliation{font-size:14px;line-height:1.65;color:var(--muted);margin:0 0 24px}
-.contacts{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
-.contacts a{display:inline-flex;align-items:center;min-height:44px;padding:7px 12px;border:1px solid var(--line);border-radius:4px;text-decoration:none;font-size:13px;font-weight:600;background:#fff}
-.contacts a.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
-.contacts a:hover{border-color:var(--accent)}
-.email{font-size:13px;overflow-wrap:anywhere}
-.section-nav{border-top:1px solid var(--line);padding-top:22px;margin-top:28px;display:flex;flex-direction:column;gap:3px}
-.section-nav a{font-size:14px;padding:7px 0;text-decoration:none;color:var(--muted)}
-.section-nav a:hover{color:var(--accent)}
-main{min-width:0}
-section{margin-bottom:48px;scroll-margin-top:24px}
-h2{font-family:Georgia,"Times New Roman",serif;font-size:27px;line-height:1.3;font-weight:400;letter-spacing:-.4px;margin:0 0 22px}
-h3{font-size:18px;line-height:1.45;letter-spacing:-.2px;margin:0 0 5px;font-weight:650}
-p{margin:0 0 15px}
-.intro{font-size:18px;line-height:1.75}
-.intro strong{font-weight:600}
-.opportunity{border-left:3px solid var(--accent);padding:10px 16px;background:var(--soft);font-size:14px;margin:24px 0 0}
-.interests{font-size:13px;color:var(--muted);margin-top:20px}
-.interests span{display:inline-block;margin-right:14px}
-.section-title{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);margin-bottom:24px;padding-bottom:12px}
-.section-title h2{margin:0}
-.section-title a{font-size:13px;white-space:nowrap}
-.project{padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid var(--line)}
-.project:last-child{margin-bottom:0;padding-bottom:0;border:0}
-.meta{font-size:13px;color:var(--muted);margin:0 0 14px}
-.status{font-size:12px;font-weight:600;color:var(--accent);margin:0 0 8px;letter-spacing:.02em}
-.project p,.project li{font-size:15px}
-.project .meta{font-size:13px}
-.project .status{font-size:12px}
-ul{padding-left:20px;margin:12px 0 0}
-li{padding-left:3px;margin-bottom:7px}
-.result{color:var(--accent);font-size:14px!important;margin-top:14px}
-details{margin-top:16px;font-size:14px}
-summary{color:var(--accent);cursor:pointer;padding:7px 0;width:fit-content;font-size:13px}
-details p{color:var(--muted);font-size:14px!important;margin-top:10px}
-.education-head{margin-bottom:18px}
-.grades{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 24px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.grades dt{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:6px}
-.grades dd{margin:0;font-size:22px;font-family:Georgia,"Times New Roman",serif}
-.grades dd span{font-size:13px;font-family:"Segoe UI",sans-serif;color:var(--muted)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.skip{position:absolute;top:-100px;left:16px;padding:8px 12px;background:#fff}
+.skip:focus{top:8px}
+h1,h2,h3,p{margin:0}
+h1{font:400 40px/1.2 Georgia,"Times New Roman",serif;letter-spacing:-1px}
+h1 span{font:400 19px/1.5 "Segoe UI",sans-serif;color:var(--muted);letter-spacing:2px;margin-left:12px;white-space:nowrap}
+.intro{margin-top:16px}
+.intro p+p{margin-top:8px}
+.links{display:flex;flex-wrap:wrap;gap:4px 22px;margin-top:14px;font-size:14px}
+.links a{display:inline-flex;align-items:center;min-height:32px;overflow-wrap:anywhere}
+nav{display:flex;flex-wrap:wrap;gap:4px 24px;margin:18px 0 28px;padding:10px 0;border-block:1px solid var(--line);font-size:14px}
+nav a{display:inline-flex;align-items:center;min-height:32px;text-decoration:none}
+section{margin-bottom:30px}
+h2{font:400 25px/1.3 Georgia,"Times New Roman",serif;margin-bottom:16px}
+h3{font-size:16px;line-height:1.5;font-weight:650}
+.project{margin-bottom:22px}
+.project:last-child{margin-bottom:0}
+.meta{font-size:13px;color:var(--muted);margin:3px 0 7px}
+.project p+p:not(.meta){margin-top:7px}
+.result{font-size:14px}
+.education p{margin-top:6px}
+.education .meta{margin-top:3px}
 .small{font-size:14px}
-.honors{font-size:14px;margin-top:14px}
-.skills{display:grid;grid-template-columns:110px minmax(0,1fr);gap:8px 18px;font-size:14px;margin:0}
-.skills dt{color:var(--muted)}
-.skills dd{margin:0}
-footer{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:12px}
-@media(max-width:850px){.layout{grid-template-columns:200px minmax(0,1fr);gap:36px;padding:40px 28px}.identity h1{font-size:36px}.contacts{gap:7px}.contacts a{padding:7px 10px}}
-@media(max-width:650px){.layout{display:block;padding:32px 22px}.identity{position:static;margin-bottom:32px}.identity h1{font-size:42px}.cn{display:inline;font-size:17px}.affiliation{margin:14px 0 18px}.contacts{margin-bottom:10px}.section-nav{flex-direction:row;flex-wrap:wrap;gap:0 22px;margin-top:20px;padding-top:10px}.section-nav a{min-height:44px}.eyebrow{margin-bottom:12px}.intro{font-size:17px}section{margin-bottom:38px}.grades{gap:10px}.grades dd{font-size:21px}.section-title{gap:10px}.section-title h2{font-size:25px}.skills{grid-template-columns:90px minmax(0,1fr);gap:8px 12px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{body{background:#fff;font-size:11pt}.layout{display:block;padding:0;max-width:none}.identity{position:static;margin-bottom:24px}.section-nav,.skip,details{display:none}.contacts{margin:12px 0}.project{break-inside:avoid}section{margin-bottom:24px}a{color:inherit}.grades{padding:10px 0}footer{margin-top:20px}}
+.extras{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;border-top:1px solid var(--line);padding-top:24px}
+.extras section{margin-bottom:24px}
+.extras h2{font-size:22px;margin-bottom:12px}
+ul{padding-left:18px;margin:0}
+li+li{margin-top:7px}
+.tools{margin-top:12px}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);padding-top:15px;font-size:12px;color:var(--muted)}
+@media(max-width:600px){.page{padding:28px 22px 22px}h1{font-size:34px}h1 span{font-size:17px;margin-left:8px}.links{gap:4px 18px}.links a,nav a{min-height:44px}nav{gap:0 22px;margin-top:12px;margin-bottom:24px}.extras{grid-template-columns:1fr;gap:0}.project{margin-bottom:24px}}
+@media print{body{background:#fff;font-size:11pt}.page{max-width:none;padding:0}nav,.skip{display:none}header{margin-bottom:24px}.project{break-inside:avoid}a{color:inherit}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="layout">
-<header class="identity">
-<p class="eyebrow">AI · Multimodal reasoning</p>
-<h1>Muyang Chen</h1>
-<p class="cn" lang="zh-CN">陈沐阳</p>
-<p class="affiliation">Undergraduate researcher<br>The Chinese University of Hong Kong, Shenzhen</p>
-<div class="contacts" aria-label="Contact and résumé">
-<a class="primary" href="CV_MuyangChen.pdf">CV (PDF)</a>
-<a href="mailto:muyangchen@link.cuhk.edu.cn">Email</a>
-<a href="https://github.com/Sv-Arcode">GitHub</a>
+<div class="page">
+<header id="top">
+<h1>Muyang Chen <span lang="zh-CN">陈沐阳</span></h1>
+<div class="intro">
+<p>I am a final-year Electrical and Computer Engineering student at <strong>The Chinese University of Hong Kong, Shenzhen</strong>, and an undergraduate researcher in the NAIS Lab. I work with Prof. Fangxin Wang and Dr. Dayou Zhang.</p>
+<p>My research interests are in <strong>multimodal reasoning and affective computing</strong>: how models use visual, acoustic, and textual evidence to understand intent and emotion. My final-year project explores visual token compression for vision-language models.</p>
 </div>
-<a class="email" href="mailto:muyangchen@link.cuhk.edu.cn">muyangchen@link.cuhk.edu.cn</a>
-<nav class="section-nav" aria-label="Page sections">
-<a href="#about">About</a>
-<a href="#research">Research &amp; projects</a>
-<a href="#education">Education</a>
-<a href="#teaching">Teaching</a>
-<a href="#skills">Skills</a>
-</nav>
+<div class="links" aria-label="Contact and CV">
+<a href="CV_MuyangChen.pdf"><strong>CV (PDF)</strong></a>
+<a href="https://github.com/Sv-Arcode">GitHub</a>
+<a href="mailto:muyangchen@link.cuhk.edu.cn">muyangchen@link.cuhk.edu.cn</a>
+</div>
+<nav aria-label="Page sections"><a href="#research">Research &amp; projects</a><a href="#education">Education</a><a href="#honors">Honors &amp; teaching</a></nav>
 </header>
 <main id="main">
-<section id="about" aria-labelledby="about-title">
-<h2 id="about-title">About</h2>
-<p class="intro">I study how multimodal models use evidence to understand intent and emotion. My interests are in <strong>multimodal reasoning, intent recognition, and affective computing</strong>.</p>
-<p>I am a final-year Electrical and Computer Engineering student at CUHK-Shenzhen and an undergraduate researcher in the NAIS Lab. My lab PI is Prof. Fangxin Wang, and my research mentor is Dr. Dayou Zhang.</p>
-<p>Through my work on MISID and AffectiveArt, I have worked on annotation, model evaluation, and multimodal systems. I am interested in understanding where models fail and how to evaluate their reasoning more carefully.</p>
-<p>I expect to graduate in July 2027.</p>
-</section>
 <section id="research" aria-labelledby="research-title">
-<div class="section-title"><h2 id="research-title">Research &amp; projects</h2><a href="CV_MuyangChen.pdf">Full CV ↗</a></div>
+<h2 id="research-title">Research &amp; projects</h2>
 <article class="project">
-<p class="status">Co-first author · Under review at AAAI 2027</p>
-<h3>MISID: Multimodal Intent Recognition</h3>
-<p class="meta">NAIS Lab, CUHK-Shenzhen · Sep 2025 – Present</p>
-<p>A dataset and framework for studying hidden intent in long, multimodal conversations in strategic deception games.</p>
-<ul>
-<li>Co-developed the annotation scheme for 3,962 aligned audiovisual utterance segments and independently evaluated inter-annotator agreement.</li>
-<li>Designed FRACTAM's modal decoupling and text reconstruction component for annotation and inference.</li>
-<li>Contributed to model evaluation, conducted ablation studies, and co-designed the LLM-as-a-Judge protocol and FRACTAM framework.</li>
-</ul>
-<p class="result">The full framework improved mean Hidden Intent Inference Score from 34.22 to 42.79 across ten language-model backbones.</p>
-<details><summary>Method and evaluation details</summary>
-<p>The modal decoupling component pairs audio with eGeMAPS features and sampled video frames with FACS descriptors. It generates modality-specific descriptions without additional speech transcripts to limit textual interference and support subsequent cross-modal inconsistency analysis.</p>
-<p>Inter-annotator agreement reached Krippendorff's α of 0.80–0.94 across structured fields. I contributed to the zero-shot evaluation of 19 language and video-language models. FRACTAM combines modality decoupling, long-range retrieval, and cross-modal evidence chains.</p>
-</details>
+<h3>MISID — Multimodal Hidden-Intent Recognition</h3>
+<p class="meta">Co-first author · NAIS Lab · Sep 2025–Present · Under review at AAAI 2027</p>
+<p>A benchmark of 3,962 aligned audiovisual utterance segments from strategic-deception games. I co-designed the annotation scheme, independently designed and conducted the inter-annotator agreement assessment, and contributed to model evaluations and ablation studies.</p>
+<p>I co-designed the FRACTAM reasoning framework and independently designed its modal-decoupling component, which generates separate audio and visual descriptions without speech transcripts to preserve potential cross-modal inconsistencies.</p>
+<p class="result">FRACTAM improved mean Hidden Intent Inference Score from <strong>34.22 to 42.79</strong> across ten LLMs (0–100 scale).</p>
 </article>
 <article class="project">
-<p class="status">Team lead · 5th of 14 teams</p>
-<h3>AffectiveArt: Artwork Emotion Understanding</h3>
-<p class="meta">ACM Multimedia 2026 Grand Challenge, Track 2 · May – Jun 2026</p>
-<p>A system for recognizing emotion in artworks and generating emotion descriptions.</p>
-<ul>
-<li>Led a three-member team and designed the overall system architecture.</li>
-<li>Fine-tuned image classifiers and designed validation-weighted voting, which outperformed the best individual model.</li>
-<li>Independently fine-tuned SigLIP2 and DINOv3 for visual-attribute salience prediction; salience and classification outputs conditioned a LoRA-fine-tuned Qwen3.5-27B description model.</li>
-</ul>
-<details><summary>Models and results</summary>
-<p>The classifiers used Gemma, Qwen, SigLIP2, and DINOv3. The system achieved 94.0% arousal, 88.3% valence, and 79.2% emotion accuracy on the hidden test set. Generated descriptions are outputs, not inputs to the classifiers.</p>
-</details>
+<h3>Visual Token Compression for Vision-Language Models</h3>
+<p class="meta">Final-year project · Supervisor: Prof. Fangxin Wang · Sep 2026–Present</p>
+<p>I study client-side compression of visual information for bandwidth-limited transmission to server-side vision-language models. I adapted a question-independent, MetaCompress-based module for image question answering and compare learned compression with random and uniform token selection. I also evaluate visual-token selection for video question answering.</p>
 </article>
 <article class="project">
-<p class="status">Course project · Project lead</p>
+<h3>AffectiveArt — Artwork Emotion Understanding</h3>
+<p class="meta">Team lead · ACM Multimedia 2026 Grand Challenge, Track 2 · May–Jun 2026</p>
+<p>I led a three-member team, designed the system architecture, and independently developed task-specific weighted voting for emotion, valence, and arousal classification. I also fine-tuned visual models to predict attribute salience for emotion-description generation.</p>
+<p class="result">Our system placed <strong>5th among 14 teams</strong>, with hidden-test accuracies of 79.2% for emotion, 88.3% for valence, and 94.0% for arousal.</p>
+</article>
+<article class="project">
 <h3>Interpretable Butterfly Classification</h3>
-<p class="meta">ECE4513 Image Processing and Computer Vision · Summer 2025</p>
-<p>Led a four-layer CNN project to classify ten visually similar butterfly species, achieving 83.23% test accuracy. Implemented Class Activation Mapping from scratch and used PCA of feature maps to examine the image regions supporting predictions.</p>
-<a class="small" href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">View code on GitHub ↗</a>
+<p class="meta">Course project lead · ECE4513 · Summer 2025 · <a href="https://github.com/Sv-Arcode/butterfly-cnn-interpretability">Code ↗</a></p>
+<p>Led a three-member team to develop a four-convolutional-layer CNN for ten visually similar species (83.23% test accuracy). Implemented Class Activation Mapping from scratch and used PCA to compare feature-map activation patterns.</p>
 </article>
 </section>
-<section id="education" aria-labelledby="education-title">
-<div class="section-title"><h2 id="education-title">Education</h2></div>
-<div class="education-head"><h3>The Chinese University of Hong Kong, Shenzhen</h3>
-<p class="small">B.Eng. in Electrical and Computer Engineering<br>Computer Engineering stream</p>
-<p class="meta">Sep 2023 – Jul 2027 (expected)</p></div>
-<dl class="grades">
-<div><dt>Cumulative GPA</dt><dd>3.81 <span>/ 4.00</span></dd></div>
-<div><dt>Major GPA</dt><dd>3.90 <span>/ 4.00</span></dd></div>
-<div><dt>Major GPA rank · CE stream</dt><dd>3 / 60 <span>· Top 5%</span></dd></div>
-</dl>
-<p class="small"><strong>Selected coursework (all A):</strong> Machine Learning; Machine Intelligence and Applications; Image Processing and Computer Vision; Parallel Programming.</p>
-<ul class="honors">
-<li>Undergraduate Research Award (URA), CUHK-Shenzhen: Jul–Sep 2026.</li>
-<li>Dean's List, School of Science and Engineering: 2023–24, 2024–25, 2025–26.</li>
-<li>Academic Specialty Entrance Scholarship, Second Class: 2023 (renewable).</li>
+<section id="education" class="education" aria-labelledby="education-title">
+<h2 id="education-title">Education</h2>
+<h3>The Chinese University of Hong Kong, Shenzhen</h3>
+<p class="meta">B.Eng. in Electrical and Computer Engineering · Computer Engineering stream · Sep 2023–Jul 2027 (expected)</p>
+<p class="small">Cumulative GPA: <strong>3.81/4.00</strong> · Major GPA: <strong>3.90/4.00</strong><br>Major GPA rank: <strong>3/60 (top 5%)</strong> in the Computer Engineering stream</p>
+<p class="small"><strong>Selected coursework (all A):</strong> Machine Learning; Machine Intelligence and Applications; Linear Algebra; Parallel Programming; Image Processing and Computer Vision; Probability and Statistics I.</p>
+</section>
+<div class="extras small">
+<section id="honors" aria-labelledby="honors-title">
+<h2 id="honors-title">Honors</h2>
+<ul>
+<li>Undergraduate Research Award, CUHK-Shenzhen · Jul–Sep 2026</li>
+<li>Dean’s List · 2023–24, 2024–25, 2025–26</li>
+<li>Academic Specialty Entrance Scholarship (Second Class) · 2023–24 through 2026–27</li>
 </ul>
 </section>
 <section id="teaching" aria-labelledby="teaching-title">
-<div class="section-title"><h2 id="teaching-title">Teaching</h2></div>
-<h3>Undergraduate Student Teaching Fellow</h3>
-<p class="meta">MAT1001 Calculus I, CUHK-Shenzhen · Sep – Dec 2024</p>
-<p class="small">Supported weekly tutorials and office hours for approximately 60 students.</p>
+<h2 id="teaching-title">Teaching &amp; skills</h2>
+<p><strong>Undergraduate Student Teaching Fellow</strong><br>MAT1001 Calculus I · Sep–Dec 2024<br>Tutorials and office hours for approximately 60 students.</p>
+<p class="tools">Python, C++ · PyTorch, OpenCV · Git, Linux, LaTeX</p>
 </section>
-<section id="skills" aria-labelledby="skills-title">
-<div class="section-title"><h2 id="skills-title">Skills &amp; languages</h2></div>
-<dl class="skills">
-<dt>Programming</dt><dd>Python, C++</dd>
-<dt>ML &amp; vision</dt><dd>PyTorch, OpenCV</dd>
-<dt>Tools</dt><dd>Git, Linux, LaTeX</dd>
-<dt>Languages</dt><dd>Mandarin (native); English (IELTS Academic 7.0)</dd>
-</dl>
-</section>
-<footer><span>© 2026 Muyang Chen</span><span>Updated 19 September 2026 · <a href="#about">Back to top ↑</a></span></footer>
+</div>
 </main>
+<footer><span>© 2026 Muyang Chen · Updated 8 November 2026</span><a href="#top">Back to top ↑</a></footer>
 </div>
 </body>
 </html>
